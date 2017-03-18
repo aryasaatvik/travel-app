@@ -11,10 +11,11 @@ import UIKit
 class myTrips: UIViewController {
     //MARK: Properties
     @IBOutlet weak var status: UILabel!
+    var trips = [Trip]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        status.text = "Welcome" + 
+        status.text = "Welcome"
         // Do any additional setup after loading the view.
     }
 
