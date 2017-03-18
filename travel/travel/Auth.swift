@@ -11,8 +11,8 @@ import Firebase
 
 class Auth: UIViewController {
     //MARK: Properties
-    @IBOutlet weak var email: UITextView!
-    @IBOutlet weak var password: UITextView!
+    @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var password: UITextField!
     @IBOutlet weak var status: UILabel!
     var handle: FIRAuthStateDidChangeListenerHandle?
     
