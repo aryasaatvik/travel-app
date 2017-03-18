@@ -56,7 +56,6 @@
                                 </state>
                                 <connections>
                                     <action selector="logIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LLM-Ja-kcy"/>
-                                    <segue destination="Oo1-ZY-dr9" kind="show" id="fXC-uB-912"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VDP-NW-gc8" customClass="Button" customModule="travel" customModuleProvider="target">
@@ -103,6 +102,7 @@
                     <connections>
                         <outlet property="email" destination="2oT-YW-pDs" id="pOC-xH-1SK"/>
                         <outlet property="password" destination="jYB-uT-sRw" id="ate-o5-7rx"/>
+                        <segue destination="Oo1-ZY-dr9" kind="presentation" identifier="toMyTrips" id="L5s-Jh-Rwt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -176,11 +176,20 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Add Place"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQa-dK-4g8">
+                                <rect key="frame" x="297" y="28" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sign Out"/>
+                                <connections>
+                                    <action selector="signOut:" destination="Oo1-ZY-dr9" eventType="touchUpInside" id="dQs-MI-FVY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="status" destination="GRR-Kj-iDQ" id="2KU-Sp-qQk"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="toAuth" id="UNw-XS-Y9F"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XFC-zj-PS8" userLabel="First Responder" sceneMemberID="firstResponder"/>

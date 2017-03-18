@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  Auth.swift
 //  travel
 //
 //  Created by Saatvik Arya on 3/17/17.
@@ -20,6 +20,15 @@ class Auth: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        handle = FIRAuth.auth()?.addStateDidChangeListener() { (auth, user) in
+            if user != nil {
+            self.performSegue(withIdentifier: "toMyTrips", sender: nil)
+            }
+        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        FIRAuth.auth()?.removeStateDidChangeListener(handle!)
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,14 +38,11 @@ class Auth: UIViewController {
     
     //MARK: Actions
     @IBAction func logIn(_ sender: UIButton) {
-        FIRAuth.auth()?.signIn(withEmail: email.text!, password: password.text!) { (user, error) in
-            self.status.text = "Logged In"
-        }
+        FIRAuth.auth()?.signIn(withEmail: email.text!, password: password.text!)
     }
     @IBAction func signUp(_ sender: UIButton) {
-        FIRAuth.auth()?.createUser(withEmail: email.text!, password: password.text!) { (user, error) in
-            self.status.text = "Signed Up"
-        }
+        FIRAuth.auth()?.createUser(withEmail: email.text!, password: password.text!)
+        
     }
     
     
