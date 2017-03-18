@@ -28,6 +28,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jYB-uT-sRw" customClass="TextField" customModule="travel" customModuleProvider="target">
                                 <rect key="frame" x="50" y="290" width="274" height="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" secureTextEntry="YES"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="keyPath">
@@ -38,7 +39,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2oT-YW-pDs" customClass="TextField" customModule="travel" customModuleProvider="target">
                                 <rect key="frame" x="50" y="252" width="274" height="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
@@ -49,6 +50,7 @@
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceZ-bU-dnh">
                                 <rect key="frame" x="90" y="345" width="194" height="30"/>
                                 <color key="backgroundColor" red="0.52156862745098043" green="0.792156862745098" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Log In">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -59,6 +61,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VDP-NW-gc8" customClass="Button" customModule="travel" customModuleProvider="target">
                                 <rect key="frame" x="90" y="383" width="194" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" red="0.52156862749999999" green="0.79215686269999996" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -66,12 +69,13 @@
                                     <action selector="signUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qI6-qn-ssR"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDJ-xt-fYv">
-                                <rect key="frame" x="16" y="169" width="343" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="app" translatesAutoresizingMaskIntoConstraints="NO" id="5Pu-bq-FyU">
+                                <rect key="frame" x="122" y="83" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="WNC-99-XvB"/>
+                                    <constraint firstAttribute="height" constant="160" id="zF5-xb-MtF"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -79,27 +83,26 @@
                             <constraint firstAttribute="trailing" secondItem="Lzp-K2-Q5q" secondAttribute="trailing" id="3gU-Zs-2ig"/>
                             <constraint firstItem="ceZ-bU-dnh" firstAttribute="top" secondItem="jYB-uT-sRw" secondAttribute="bottom" constant="25" id="6Ss-LB-hRM"/>
                             <constraint firstItem="Lzp-K2-Q5q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7jp-84-jzE"/>
-                            <constraint firstItem="qDJ-xt-fYv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="149" id="8m9-K2-hx0"/>
                             <constraint firstItem="Lzp-K2-Q5q" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="9yf-GR-Zjf"/>
                             <constraint firstAttribute="trailingMargin" secondItem="jYB-uT-sRw" secondAttribute="trailing" constant="35" id="AD6-6Y-KTP"/>
+                            <constraint firstItem="5Pu-bq-FyU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="63" id="CMs-63-M7T"/>
                             <constraint firstItem="jYB-uT-sRw" firstAttribute="top" secondItem="2oT-YW-pDs" secondAttribute="bottom" constant="8" id="GGr-xA-sTv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="VDP-NW-gc8" secondAttribute="trailing" constant="75" id="Kfh-cI-r3r"/>
                             <constraint firstItem="ceZ-bU-dnh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="74" id="NCK-hm-Lme"/>
-                            <constraint firstItem="qDJ-xt-fYv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="NW1-Cz-Jse"/>
-                            <constraint firstItem="qDJ-xt-fYv" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="SIj-ff-bLm"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Lzp-K2-Q5q" secondAttribute="bottom" id="TzB-In-th6"/>
+                            <constraint firstItem="5Pu-bq-FyU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="106" id="UEd-fC-qsR"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ceZ-bU-dnh" secondAttribute="trailing" constant="75" id="UOs-5H-pbG"/>
                             <constraint firstItem="jYB-uT-sRw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="34" id="cld-Eu-KVc"/>
-                            <constraint firstItem="2oT-YW-pDs" firstAttribute="top" secondItem="qDJ-xt-fYv" secondAttribute="bottom" constant="62" id="dtK-at-n53"/>
                             <constraint firstItem="VDP-NW-gc8" firstAttribute="top" secondItem="ceZ-bU-dnh" secondAttribute="bottom" constant="8" id="fRE-AC-WNt"/>
                             <constraint firstAttribute="trailingMargin" secondItem="2oT-YW-pDs" secondAttribute="trailing" constant="35" id="giT-SR-Lp6"/>
+                            <constraint firstItem="2oT-YW-pDs" firstAttribute="top" secondItem="5Pu-bq-FyU" secondAttribute="bottom" constant="39" id="nJT-CB-I6q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5Pu-bq-FyU" secondAttribute="trailing" constant="107" id="qs9-gO-s6a"/>
                             <constraint firstItem="2oT-YW-pDs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="34" id="zYa-2a-BRV"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="email" destination="2oT-YW-pDs" id="pOC-xH-1SK"/>
                         <outlet property="password" destination="jYB-uT-sRw" id="ate-o5-7rx"/>
-                        <outlet property="status" destination="qDJ-xt-fYv" id="Dqs-zK-o2a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -186,6 +189,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="app" width="300" height="300"/>
         <image name="login_bg" width="5498" height="3615"/>
     </resources>
 </document>
