@@ -15,8 +15,6 @@ class signUp: UIViewController {
     @IBOutlet weak var last: UITextField!
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var pass: UITextField!
-    @IBOutlet weak var confirmPass: UITextField!
-    
     var ref: FIRDatabaseReference!
     var handle: FIRAuthStateDidChangeListenerHandle?
 
@@ -29,12 +27,15 @@ class signUp: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
     @IBAction func signUp(_ sender: UIButton) {
         FIRAuth.auth()?.createUser(withEmail: email.text!, password: pass.text!)
-        self.ref.child("users").setValue(["firstName": "saatvik"])
-        self.performSegue(withIdentifier: "toTripDetails", sender: nil)
+        FIRAuth.auth()?.signIn(withEmail: email.text!, password: pass.text!)
+        self.ref.child("users/\(first.text)/firstName").setValue(first.text)
+        self.ref.child("users/\(first.text)/lastName").setValue(last.text)
+        self.ref.child("users/\(first.text)/email").setValue(email.text)
+        self.performSegue(withIdentifier: "toTripDetails", sender: self)
+        print("account created")
     }
     /*
     // MARK: - Navigation
