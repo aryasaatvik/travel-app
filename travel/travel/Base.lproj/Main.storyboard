@@ -144,10 +144,10 @@
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
         </scene>
-        <!--My Trips-->
+        <!--Trip Detail-->
         <scene sceneID="CdU-3H-ngi">
             <objects>
-                <viewController id="Oo1-ZY-dr9" customClass="myTrips" customModule="travel" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Oo1-ZY-dr9" customClass="tripDetail" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TdK-eL-i0i"/>
                         <viewControllerLayoutGuide type="bottom" id="yJf-4J-Zem"/>
@@ -261,7 +261,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XFC-zj-PS8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="888.79999999999995" y="37.331334332833585"/>
+            <point key="canvasLocation" x="836" y="-339"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Hf4-m7-am9">
@@ -281,6 +281,25 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="500" id="fpJ-U1-LgM"/>
                                 </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="CPm-sM-YGN">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CPm-sM-YGN" id="7R0-dZ-JHg">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add a new trip" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7G0-gG-n9A">
+                                                    <rect key="frame" x="8" y="8" width="359" height="27"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ne-Jp-8ML" customClass="Button" customModule="travel" customModuleProvider="target">
                                 <rect key="frame" x="137" y="554" width="100" height="46"/>
@@ -291,6 +310,9 @@
                                 <state key="normal" title="New Trip">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="3He-7o-0Tt" kind="presentation" id="fkc-o5-uLX"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -306,7 +328,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cVQ-sv-NTv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1580" y="48.125937031484263"/>
+            <point key="canvasLocation" x="1056.8" y="369.26536731634184"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="pom-c2-10k">
@@ -355,7 +377,7 @@
                                         <rect key="frame" x="0.0" y="28" width="325" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UNf-6V-2gj" id="9Hs-AO-uLZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="325" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="325" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -367,7 +389,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vne-DI-8Jk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2325.5999999999999" y="47.226386806596707"/>
+            <point key="canvasLocation" x="2255" y="173"/>
         </scene>
     </scenes>
     <resources>
