@@ -40,11 +40,5 @@ class Auth: UIViewController {
     @IBAction func logIn(_ sender: UIButton) {
         FIRAuth.auth()?.signIn(withEmail: email.text!, password: password.text!)
     }
-    @IBAction func signUp(_ sender: UIButton) {
-        FIRAuth.auth()?.createUser(withEmail: email.text!, password: password.text!)
-        
-    }
-    
-    
 }
 
