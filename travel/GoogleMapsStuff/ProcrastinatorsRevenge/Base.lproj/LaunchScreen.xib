@@ -10,23 +10,38 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="06e-Dk-bSB">
-                    <rect key="frame" x="40" y="55" width="240" height="128"/>
-                </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Maps with Friends" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LtN-oc-fSX">
-                    <rect key="frame" x="90" y="273" width="140" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Routes with Friends" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LtN-oc-fSX">
+                    <rect key="frame" x="85" y="355" width="151" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="151" id="JkF-B1-S5C"/>
+                        <constraint firstAttribute="height" constant="21" id="fVk-PO-An1"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="0.52156862745098043" green="0.792156862745098" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="06e-Dk-bSB">
+                    <rect key="frame" x="40" y="157" width="240" height="155"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="6IU-IU-XXr"/>
+                        <constraint firstAttribute="height" constant="155" id="77E-Pg-JE7"/>
+                    </constraints>
+                </imageView>
             </subviews>
-            <color key="backgroundColor" red="0.78956555815216201" green="0.89030501751446156" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="06e-Dk-bSB" secondAttribute="trailing" constant="40" id="TeZ-a2-b6C"/>
+                <constraint firstAttribute="trailing" secondItem="LtN-oc-fSX" secondAttribute="trailing" constant="84" id="e3F-8N-gQg"/>
+                <constraint firstItem="LtN-oc-fSX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="85" id="mv1-Ly-vEn"/>
+                <constraint firstItem="LtN-oc-fSX" firstAttribute="top" secondItem="06e-Dk-bSB" secondAttribute="bottom" constant="43" id="oEV-MX-5XR"/>
+                <constraint firstItem="06e-Dk-bSB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="oTB-WY-pFg"/>
+                <constraint firstItem="06e-Dk-bSB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="157" id="ulH-X5-Kum"/>
+            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
             <point key="canvasLocation" x="548" y="455"/>
         </view>
     </objects>
     <resources>
-        <image name="download" width="275" height="183"/>
+        <image name="icon" width="900" height="900"/>
     </resources>
 </document>
