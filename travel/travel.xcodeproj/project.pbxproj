@@ -16,6 +16,8 @@
 		C784046E1E7D184B007D94D6 /* myTrips.swift in Sources */ = {isa = PBXBuildFile; fileRef = C784046D1E7D184B007D94D6 /* myTrips.swift */; };
 		C78404701E7D2724007D94D6 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = C784046F1E7D2724007D94D6 /* Trip.swift */; };
 		C7B0B1671E7D06C800BDCFC4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C7B0B1661E7D06C800BDCFC4 /* GoogleService-Info.plist */; };
+		CF9865801E7D38ED009A0749 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF98657F1E7D38ED009A0749 /* TextField.swift */; };
+		CF9865821E7D4332009A0749 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9865811E7D4332009A0749 /* Button.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		C784046D1E7D184B007D94D6 /* myTrips.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myTrips.swift; sourceTree = "<group>"; };
 		C784046F1E7D2724007D94D6 /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 		C7B0B1661E7D06C800BDCFC4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CF98657F1E7D38ED009A0749 /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		CF9865811E7D4332009A0749 /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,8 @@
 				C7119B5D1E7CFCF8003DBBDF /* LaunchScreen.storyboard */,
 				C7119B601E7CFCF8003DBBDF /* Info.plist */,
 				C7B0B1661E7D06C800BDCFC4 /* GoogleService-Info.plist */,
+				CF98657F1E7D38ED009A0749 /* TextField.swift */,
+				CF9865811E7D4332009A0749 /* Button.swift */,
 			);
 			path = travel;
 			sourceTree = "<group>";
@@ -222,8 +228,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C78404701E7D2724007D94D6 /* Trip.swift in Sources */,
+				CF9865821E7D4332009A0749 /* Button.swift in Sources */,
 				C784046E1E7D184B007D94D6 /* myTrips.swift in Sources */,
 				C7119B571E7CFCF7003DBBDF /* Auth.swift in Sources */,
+				CF9865801E7D38ED009A0749 /* TextField.swift in Sources */,
 				C7119B551E7CFCF7003DBBDF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
