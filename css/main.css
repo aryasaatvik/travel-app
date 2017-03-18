@@ -20,6 +20,7 @@ h2 {
   font-size: 38px;
   font-weight: 200;
 }
+
 h3 {
   font-size: 25px;
 }
@@ -93,10 +94,24 @@ header .social-info li a {
 header .social-info li a:hover {
   color: #f48e5c;
 }
+
+#money {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
 #banner {
+  background: red; 
+  background: -webkit-radial-gradient(lightblue, #85caf0);
+  background: -o-radial-gradient(lightblue, #85caf0); 
+  background: -moz-radial-gradient(lightblue, #85caf0); 
+  background: radial-gradient(lightblue, #85caf0); 
+    
+  background-color: blu
   background-size: cover;
   position: relative;
-  padding: 80px 0;
+  padding: 75px 0;
 }
 #banner .app-img {
   padding-top: 10px;
@@ -110,12 +125,12 @@ header .social-info li a:hover {
 #banner .block h1 {
   margin-bottom: 18px;
   line-height: 55px;
-  color: #262b31;
+  color: white;
   font-weight: 300;
 }
 #banner .block p {
   font-size: 20px;
-  color: #999;
+  color: white;
   font-weight: 300;
 }
 #banner .block .download-btn li {
@@ -124,7 +139,7 @@ header .social-info li a:hover {
 #banner .block .download-btn li a {
   color: #fff;
   border: none;
-  border-radius: 0;
+  border-radius: 4px;
   padding: 10px 60px 13px;
   font-size: 18px;
 }
@@ -172,8 +187,8 @@ header .social-info li a:hover {
   padding: 30px 0;
 }
 #feature .service-wrapper {
-  border-top: 1px solid #dedede;
-  border-bottom: 1px solid #dedede;
+  border-top: 3px solid #dedede;
+  border-bottom: 3px solid #dedede;
   padding: 50px 0;
 }
 #service .block {
@@ -250,6 +265,7 @@ header .social-info li a:hover {
 }
 #feature .block {
   text-align: center;
+
 }
 #feature .block img {
   display: inline-block;
@@ -344,6 +360,7 @@ footer .footer-logo {
   margin-bottom: 15px;
   display: inline-block;
   text-align: center;
+    
 }
 footer p {
   color: #6F6F6F;
