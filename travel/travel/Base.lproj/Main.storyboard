@@ -137,7 +137,7 @@
                     <connections>
                         <outlet property="email" destination="2oT-YW-pDs" id="pOC-xH-1SK"/>
                         <outlet property="password" destination="jYB-uT-sRw" id="ate-o5-7rx"/>
-                        <segue destination="Oo1-ZY-dr9" kind="presentation" identifier="toMyTrips" id="L5s-Jh-Rwt"/>
+                        <segue destination="Oo1-ZY-dr9" kind="presentation" identifier="toTripDetails" id="L5s-Jh-Rwt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
