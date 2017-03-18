@@ -22,7 +22,7 @@ class Auth: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         handle = FIRAuth.auth()?.addStateDidChangeListener() { (auth, user) in
             if user != nil {
-            self.performSegue(withIdentifier: "toMyTrips", sender: nil)
+            self.performSegue(withIdentifier: "toTripDetails", sender: nil)
             }
         }
     }
