@@ -12,7 +12,7 @@
         <!--Auth-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="Auth" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="Auth" customModule="travel" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -48,7 +48,6 @@
                                 </state>
                                 <connections>
                                     <action selector="logIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LLM-Ja-kcy"/>
-                                    <segue destination="Oo1-ZY-dr9" kind="show" id="fXC-uB-912"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VDP-NW-gc8">
@@ -74,7 +73,8 @@
                     <connections>
                         <outlet property="email" destination="2oT-YW-pDs" id="pOC-xH-1SK"/>
                         <outlet property="password" destination="jYB-uT-sRw" id="ate-o5-7rx"/>
-                        <outlet property="status" destination="qDJ-xt-fYv" id="Dqs-zK-o2a"/>
+                        <outlet property="status" destination="qDJ-xt-fYv" id="VQ5-o0-LJy"/>
+                        <segue destination="Oo1-ZY-dr9" kind="presentation" identifier="toMyTrips" id="kwa-Bj-VEl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -84,8 +84,7 @@
         <!--My Trips-->
         <scene sceneID="CdU-3H-ngi">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XFC-zj-PS8" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="Oo1-ZY-dr9" customClass="myTrips" customModule="travel" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Oo1-ZY-dr9" customClass="myTrips" customModule="travel" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TdK-eL-i0i"/>
                         <viewControllerLayoutGuide type="bottom" id="yJf-4J-Zem"/>
@@ -118,7 +117,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KXp-CS-c1V">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Trip" id="KXp-CS-c1V">
                                         <rect key="frame" x="0.0" y="28" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KXp-CS-c1V" id="s7P-pH-pN5">
@@ -149,6 +148,15 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Add Place"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rKT-HZ-BwY">
+                                <rect key="frame" x="277" y="28" width="89" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sign Out"/>
+                                <connections>
+                                    <action selector="signOut:" destination="Oo1-ZY-dr9" eventType="touchUpInside" id="xEV-7O-QCi"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="toAuth" id="Hm5-9t-bgu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -156,6 +164,7 @@
                         <outlet property="status" destination="GRR-Kj-iDQ" id="2KU-Sp-qQk"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XFC-zj-PS8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="888.79999999999995" y="37.331334332833585"/>
         </scene>

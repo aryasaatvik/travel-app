@@ -7,16 +7,24 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
 
 class myTrips: UIViewController {
     //MARK: Properties
     @IBOutlet weak var status: UILabel!
     var trips = [Trip]()
-
+    var ref: FIRDatabaseReference! = FIRDatabase.database().reference()
+    var handle: FIRAuthStateDidChangeListenerHandle?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        status.text = "Welcome"
         // Do any additional setup after loading the view.
+        handle = FIRAuth.auth()!.addStateDidChangeListener { (auth, user) in
+            if user == nil {
+                self.performSegue(withIdentifier: "toAuth", sender: self)
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,6 +32,15 @@ class myTrips: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func signOut(_ sender: UIButton) {
+        do {
+            try FIRAuth.auth()?.signOut()
+        } catch let signOutError as NSError {
+            print ("Error signing out: %@", signOutError)
+        }
+        FIRAuth.auth()?.removeStateDidChangeListener(handle!)
+
+    }
 
     /*
     // MARK: - Navigation
