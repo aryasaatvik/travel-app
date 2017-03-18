@@ -6,13 +6,14 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Auth-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="Auth" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="Auth" customModule="travel" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -21,27 +22,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="login_bg" translatesAutoresizingMaskIntoConstraints="NO" id="Lzp-K2-Q5q">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_bg" translatesAutoresizingMaskIntoConstraints="NO" id="Lzp-K2-Q5q">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jYB-uT-sRw">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jYB-uT-sRw" customClass="TextField" customModule="travel" customModuleProvider="target">
                                 <rect key="frame" x="50" y="290" width="274" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" secureTextEntry="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="keyPath">
+                                        <color key="value" red="0.52156862745098043" green="0.792156862745098" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2oT-YW-pDs">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2oT-YW-pDs" customClass="TextField" customModule="travel" customModuleProvider="target">
                                 <rect key="frame" x="50" y="252" width="274" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                        <color key="value" red="0.52156862745098043" green="0.792156862745098" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceZ-bU-dnh">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceZ-bU-dnh">
                                 <rect key="frame" x="90" y="345" width="194" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.52156862745098043" green="0.792156862745098" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Log In">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -51,9 +57,8 @@
                                     <segue destination="Oo1-ZY-dr9" kind="show" id="fXC-uB-912"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VDP-NW-gc8">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VDP-NW-gc8" customClass="Button" customModule="travel" customModuleProvider="target">
                                 <rect key="frame" x="90" y="383" width="194" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" red="0.52156862749999999" green="0.79215686269999996" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -61,15 +66,35 @@
                                     <action selector="signUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qI6-qn-ssR"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDJ-xt-fYv">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDJ-xt-fYv">
                                 <rect key="frame" x="16" y="169" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VDP-NW-gc8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="74" id="2JE-iI-hp1"/>
+                            <constraint firstAttribute="trailing" secondItem="Lzp-K2-Q5q" secondAttribute="trailing" id="3gU-Zs-2ig"/>
+                            <constraint firstItem="ceZ-bU-dnh" firstAttribute="top" secondItem="jYB-uT-sRw" secondAttribute="bottom" constant="25" id="6Ss-LB-hRM"/>
+                            <constraint firstItem="Lzp-K2-Q5q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7jp-84-jzE"/>
+                            <constraint firstItem="qDJ-xt-fYv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="149" id="8m9-K2-hx0"/>
+                            <constraint firstItem="Lzp-K2-Q5q" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="9yf-GR-Zjf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jYB-uT-sRw" secondAttribute="trailing" constant="35" id="AD6-6Y-KTP"/>
+                            <constraint firstItem="jYB-uT-sRw" firstAttribute="top" secondItem="2oT-YW-pDs" secondAttribute="bottom" constant="8" id="GGr-xA-sTv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VDP-NW-gc8" secondAttribute="trailing" constant="75" id="Kfh-cI-r3r"/>
+                            <constraint firstItem="ceZ-bU-dnh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="74" id="NCK-hm-Lme"/>
+                            <constraint firstItem="qDJ-xt-fYv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="NW1-Cz-Jse"/>
+                            <constraint firstItem="qDJ-xt-fYv" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="SIj-ff-bLm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Lzp-K2-Q5q" secondAttribute="bottom" id="TzB-In-th6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ceZ-bU-dnh" secondAttribute="trailing" constant="75" id="UOs-5H-pbG"/>
+                            <constraint firstItem="jYB-uT-sRw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="34" id="cld-Eu-KVc"/>
+                            <constraint firstItem="2oT-YW-pDs" firstAttribute="top" secondItem="qDJ-xt-fYv" secondAttribute="bottom" constant="62" id="dtK-at-n53"/>
+                            <constraint firstItem="VDP-NW-gc8" firstAttribute="top" secondItem="ceZ-bU-dnh" secondAttribute="bottom" constant="8" id="fRE-AC-WNt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2oT-YW-pDs" secondAttribute="trailing" constant="35" id="giT-SR-Lp6"/>
+                            <constraint firstItem="2oT-YW-pDs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="34" id="zYa-2a-BRV"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="email" destination="2oT-YW-pDs" id="pOC-xH-1SK"/>
@@ -84,7 +109,6 @@
         <!--My Trips-->
         <scene sceneID="CdU-3H-ngi">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XFC-zj-PS8" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Oo1-ZY-dr9" customClass="myTrips" customModule="travel" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TdK-eL-i0i"/>
@@ -118,7 +142,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KXp-CS-c1V">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Trip" id="KXp-CS-c1V">
                                         <rect key="frame" x="0.0" y="28" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KXp-CS-c1V" id="s7P-pH-pN5">
@@ -156,6 +180,7 @@
                         <outlet property="status" destination="GRR-Kj-iDQ" id="2KU-Sp-qQk"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XFC-zj-PS8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="888.79999999999995" y="37.331334332833585"/>
         </scene>
