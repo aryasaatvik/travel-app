@@ -16,8 +16,8 @@
 		C784046E1E7D184B007D94D6 /* tripDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C784046D1E7D184B007D94D6 /* tripDetail.swift */; };
 		C78404701E7D2724007D94D6 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = C784046F1E7D2724007D94D6 /* Trip.swift */; };
 		C7B0B1671E7D06C800BDCFC4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C7B0B1661E7D06C800BDCFC4 /* GoogleService-Info.plist */; };
-		C7F553651E7D6EE700A10209 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F553641E7D6EE700A10209 /* User.swift */; };
 		C7F5536B1E7D8DA000A10209 /* myTrips.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F5536A1E7D8DA000A10209 /* myTrips.swift */; };
+		C7F5536D1E7D93A100A10209 /* signUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F5536C1E7D93A100A10209 /* signUp.swift */; };
 		CF87B8151E7D718700CDEBFF /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF87B8141E7D718700CDEBFF /* View.swift */; };
 		CF9865801E7D38ED009A0749 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF98657F1E7D38ED009A0749 /* TextField.swift */; };
 		CF9865821E7D4332009A0749 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9865811E7D4332009A0749 /* Button.swift */; };
@@ -37,8 +37,8 @@
 		C784046D1E7D184B007D94D6 /* tripDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tripDetail.swift; sourceTree = "<group>"; };
 		C784046F1E7D2724007D94D6 /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 		C7B0B1661E7D06C800BDCFC4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		C7F553641E7D6EE700A10209 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C7F5536A1E7D8DA000A10209 /* myTrips.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myTrips.swift; sourceTree = "<group>"; };
+		C7F5536C1E7D93A100A10209 /* signUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = signUp.swift; sourceTree = "<group>"; };
 		CF87B8141E7D718700CDEBFF /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		CF98657F1E7D38ED009A0749 /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		CF9865811E7D4332009A0749 /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 				C784046D1E7D184B007D94D6 /* tripDetail.swift */,
 				C784046F1E7D2724007D94D6 /* Trip.swift */,
 				C7119B581E7CFCF8003DBBDF /* Main.storyboard */,
-				C7F553641E7D6EE700A10209 /* User.swift */,
+				C7F5536C1E7D93A100A10209 /* signUp.swift */,
 				C7119B5B1E7CFCF8003DBBDF /* Assets.xcassets */,
 				C7119B5D1E7CFCF8003DBBDF /* LaunchScreen.storyboard */,
 				C7119B601E7CFCF8003DBBDF /* Info.plist */,
@@ -241,10 +241,10 @@
 				CF9865821E7D4332009A0749 /* Button.swift in Sources */,
 				C7F5536B1E7D8DA000A10209 /* myTrips.swift in Sources */,
 				C784046E1E7D184B007D94D6 /* tripDetail.swift in Sources */,
+				C7F5536D1E7D93A100A10209 /* signUp.swift in Sources */,
 				C7119B571E7CFCF7003DBBDF /* Auth.swift in Sources */,
 				CF9865801E7D38ED009A0749 /* TextField.swift in Sources */,
 				C7119B551E7CFCF7003DBBDF /* AppDelegate.swift in Sources */,
-				C7F553651E7D6EE700A10209 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
