@@ -1,0 +1,7 @@
+source 'https://github.com/CocoaPods/Specs.git'
+project '../travel.xcodeproj'
+target 'travel' do
+  pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+end
+

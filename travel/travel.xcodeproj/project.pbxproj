@@ -14,6 +14,7 @@
 		C7119B5C1E7CFCF8003DBBDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7119B5B1E7CFCF8003DBBDF /* Assets.xcassets */; };
 		C7119B5F1E7CFCF8003DBBDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7119B5D1E7CFCF8003DBBDF /* LaunchScreen.storyboard */; };
 		C784046E1E7D184B007D94D6 /* myTrips.swift in Sources */ = {isa = PBXBuildFile; fileRef = C784046D1E7D184B007D94D6 /* myTrips.swift */; };
+		C78404701E7D2724007D94D6 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = C784046F1E7D2724007D94D6 /* Trip.swift */; };
 		C7B0B1671E7D06C800BDCFC4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C7B0B1661E7D06C800BDCFC4 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		C7119B5E1E7CFCF8003DBBDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7119B601E7CFCF8003DBBDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C784046D1E7D184B007D94D6 /* myTrips.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myTrips.swift; sourceTree = "<group>"; };
+		C784046F1E7D2724007D94D6 /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 		C7B0B1661E7D06C800BDCFC4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +87,7 @@
 				C7119B541E7CFCF7003DBBDF /* AppDelegate.swift */,
 				C7119B561E7CFCF7003DBBDF /* Auth.swift */,
 				C784046D1E7D184B007D94D6 /* myTrips.swift */,
+				C784046F1E7D2724007D94D6 /* Trip.swift */,
 				C7119B581E7CFCF8003DBBDF /* Main.storyboard */,
 				C7119B5B1E7CFCF8003DBBDF /* Assets.xcassets */,
 				C7119B5D1E7CFCF8003DBBDF /* LaunchScreen.storyboard */,
@@ -218,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C78404701E7D2724007D94D6 /* Trip.swift in Sources */,
 				C784046E1E7D184B007D94D6 /* myTrips.swift in Sources */,
 				C7119B571E7CFCF7003DBBDF /* Auth.swift in Sources */,
 				C7119B551E7CFCF7003DBBDF /* AppDelegate.swift in Sources */,
