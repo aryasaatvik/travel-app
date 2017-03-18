@@ -12,6 +12,7 @@ class Trip {
     //MARK: Properties
     var name: String
     var author: String
+    var collaborators = [String]()
     
     //MARK: Initialization
     init?(name: String, author: String) {

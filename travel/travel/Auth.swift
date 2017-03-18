@@ -22,7 +22,7 @@ class Auth: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         handle = FIRAuth.auth()?.addStateDidChangeListener() { (auth, user) in
             if user != nil {
-            self.performSegue(withIdentifier: "toMyTrips", sender: nil)
+            self.performSegue(withIdentifier: "toTripDetails", sender: nil)
             }
         }
     }
@@ -40,11 +40,5 @@ class Auth: UIViewController {
     @IBAction func logIn(_ sender: UIButton) {
         FIRAuth.auth()?.signIn(withEmail: email.text!, password: password.text!)
     }
-    @IBAction func signUp(_ sender: UIButton) {
-        FIRAuth.auth()?.createUser(withEmail: email.text!, password: password.text!)
-        
-    }
-    
-    
 }
 
